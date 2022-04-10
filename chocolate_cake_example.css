@@ -22,6 +22,7 @@ div.category
 {
     text-align: center;
     margin-bottom: -20px;
+    overflow: visible; /* ensures recipe title can overlap content class */
 }
 p.category
 {
@@ -42,7 +43,6 @@ div.content
     padding: 0px 30px 30px 30px;
     min-width: 300px;
     box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
-    overflow: visible;
 }
 
 h1

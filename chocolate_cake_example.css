@@ -7,7 +7,7 @@ h1.category, p - can apply it to different objects
 remember h1.category for class, h1#category for id
 */
 
-* /* anythinig here applies to everything on the webpage */
+* /* anything here applies to everything on the webpage */
 {
     overflow: auto; /* automatically adjusts content window for manage information overflow */
 }
@@ -39,8 +39,8 @@ p.category
 div.content
 {
     background-color: white;
-    margin: 60px 10% 80px 10%;
-    padding: 0px 30px 30px 30px;
+    margin: 40px 8px 80px 8px;
+    padding: 0px 8px 20px 8px;
     min-width: 300px;
     box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
     overflow: visible;
@@ -88,7 +88,7 @@ table.info
     width: 100%; 
     color: white;
     background-color: #6C8290C0; /* note the last 2 digits represent opacity */
-    height: 80px;
+    height: 50px;
 }
 
 /* all the th data of a table that has an info class */
@@ -96,14 +96,14 @@ table.info th
 {
     vertical-align: bottom; /* aligns text to bottom of box */
     padding-bottom: 8px;
-    font-size: 16px;
+    font-size: 14px;
 }
 /* all the td data of a table that has an info class */
 table.info td 
 {
     text-align: center; /* aligns text to center instead of left */
     vertical-align: top;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 img.info
@@ -127,16 +127,14 @@ div.colheader h2
 }
 div.column1
 {
-    width: 45%;
+    width: 100%;
     display: inline-block; /* ensures there is enough width for second column */
-    margin-right: 10%;
     margin-top: 20px;
 }
 
 div.column2
 {
-    float: right;
-    width: 45%;
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -180,4 +178,53 @@ table.instructions td
 table.instructions tr
 {
     height: 40px; /*avoids padding anomolies with single lines vs multiple lines */
+}
+
+/* If on desktop (over 768px) */
+@media only screen and (min-width: 768px)
+{
+    div.content
+    {
+        margin: 60px 10% 80px 10%;
+        padding: 0px 30px 30px 30px;
+        min-width: 300px;
+    }
+
+    table.info
+    {
+        height: 80px;
+    }
+
+    table.info th
+    {
+        font-size: 16px;
+    }
+
+    table.info td 
+    {
+        font-size: 14px;
+    }
+
+    div.column1
+    {
+        width: 45%;
+        margin-right: 10%;
+    }
+
+    div.column2
+    {
+        float: right;
+        width: 45%;
+    }
+}
+
+/* If on large desktop (over 900px) */
+@media only screen and (min-width: 900px)
+{
+    div.content
+    {
+        margin-left: auto; /* content always centred horizontally */
+        margin-right: auto;
+        width: 645px;
+    }
 }

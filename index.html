@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <title> Chocolate Cake </title>
+        <meta charset = "UTF-8">
+        <link rel="stylesheet" href="chocolate_cake_example.css" />
+    </head>
+
+    <body>
+
+        <div class="content">
+            <div class = "category">
+                <p class="category"> Recipe </p>
+            </div>
+            <!-- Title -->
+            <h1 align = "left">Chocolate Cake Recipe</h1>
+            <!-- div made so width in p.desription can be aligned to the center
+                 rather than going back to the left
+            -->
+            <div class="separator">
+
+            </div>
+            <div class="center">
+                <p class="description"> " Here is a fast and easy chocolate cake recipe for you.  Enjoy! "</p>
+            </div>
+
+            <!-- <div style="position:relative"> -->
+            <div class="info">
+                <!-- Main Image -->
+                <img class="center info" src = "https://jonathanroux.com/cake.jpg">
+                <!-- Can use "https://jonathanroux.com/cake.jpg?id=999" and it will force browser
+                to download the image rather than taking it from the cache-->
+                <!-- Table -->
+                <table class="info";>
+                    <tr>
+                        <th> Difficulty </th>
+                        <th> Preparation </th>
+                        <th> Cooking Time </th>
+                        <th> Total Time </th>
+                    </tr>
+                    <tr>
+                        <td> Easy </td>
+                        <td> 10 min </td>
+                        <td> 25 min </td>
+                        <td> 35 min </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div> <!-- sperate div to keep these columns in overflow: auto mode rather than visible-->
+            <!-- Recipe Instructions -->
+                <div class = "column1 colheader">
+                    <h2 align = "left"> Ingredients </h2>
+                        <div class = "ingredients">
+                            <p>Black Chocolate: 200g</p>
+                            <p>Sugar: 150g</p>
+                            <p>Butter: 200g</p>
+                            <p>Eggs: 4</p>
+                            <p>Flour: 80g</p>
+                        </div>
+                </div>
+
+                <div class = "column2 colheader">
+                <h2 align = "left"> Instructions </h2>
+                    <table class = "instructions">
+                        <tr>
+                            <td> <p class = "number"> 1 </p> </td>
+                            <td class = "instructionstep"> In a bowl, combine flour, sugar, melted butter and melted chocolate.</td>
+                        </tr>
+                        <tr>
+                            <td> <p class = "number"> 2 </p> </td>
+                            <td class = "instructionstep"> Add eggs and mix together for 1 minute.</td>
+                        </tr>
+                        <tr>
+                            <td> <p class = "number"> 3 </p> </td>
+                            <td class = "instructionstep"> Pour into a lined cake tin and bake for 25 - 35 minutes at 160C.</td>
+                        </tr>
+                        <tr>
+                            <td> <p class = "number"> 4 </p> </td>
+                            <td class = "instructionstep"> If the cake springs back it's cooked. Do not overcook.</td>
+                        </tr>
+                        <tr>
+                            <td> <p class = "number"> 5 </p> </td>
+                            <td class = "instructionstep"> Ice cake once it has cooled.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+
+</html>
